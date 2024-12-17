@@ -32,9 +32,11 @@ while [ -n "$1" ]
            reload )
                 systemctl reload nginx
            ;;
-           status )fync_status;;
+           status )
+           fync_status
+           ;;
            add-domain )add_domians;;
-           )help;;
+           * )help;;
         esac
     shift
  done

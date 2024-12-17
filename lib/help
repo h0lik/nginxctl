@@ -1,6 +1,7 @@
 #!bin/bash
-menu() {
-    cat << EOF
+menu-nginx() {
+reset
+cat << EOF
  ##  ##    ####     ####    ##  ##   ##  ##             ####    ######   ##      
  ### ##   ##  ##     ##     ### ##   ##  ##            ##  ##     ##     ##      
  ######   ##         ##     ######    ####             ##         ##     ##      
@@ -18,7 +19,7 @@ nctl (start|stop|status|reload|restart|check|add-domains|pass)
 - reload  : reload configure nginx 
 - restart : Restart nginx systemd 
 - check   : Check configure nginx 
--add-domains : Add domains 
+- add-domains : Add domains 
 - pass  
 =======================================
 EOF

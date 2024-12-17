@@ -3,6 +3,8 @@
 green='\e[32m'
 blue='\e[34m'
 clear='\e[0m'
+1
+source $PWD/lib/
 ColorGreen(){
 	echo -ne $green$1$clear
 }
@@ -12,13 +14,13 @@ ColorBlue(){
 add_domians() {
 echo -ne "
 Distribution List 
-$(ColorGreen '1)') Proxy config
+$(ColorGreen '1)') Proxy config!
 $(ColorGreen '2)') Config dir sites
 $(ColorBlue 'Choose a distribution:') "
         read a
         case $a in
-	        1) debian12 ; menu_deb  ;;
-	        2) ubuntu22 ; menu_deb ;;
+	        1) Proxy config! ; rpoxy  ;;
+	        2)  ;  ;;
 			0) exit 0 ;;
 			*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac
