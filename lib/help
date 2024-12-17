@@ -1,0 +1,25 @@
+#!bin/bash
+menu() {
+    cat << EOF
+ ##  ##    ####     ####    ##  ##   ##  ##             ####    ######   ##      
+ ### ##   ##  ##     ##     ### ##   ##  ##            ##  ##     ##     ##      
+ ######   ##         ##     ######    ####             ##         ##     ##      
+ ######   ## ###     ##     ######     ##     ######   ##         ##     ##      
+ ## ###   ##  ##     ##     ## ###    ####             ##         ##     ##      
+ ##  ##   ##  ##     ##     ##  ##   ##  ##            ##  ##     ##     ##      
+ ##  ##    ####     ####    ##  ##   ##  ##             ####      ##     ###### 
+==========================================================
+What will it look like:
+===============Nginx ctl===============
+nctl (start|stop|status|reload|restart|check|add-domains|pass)
+- start   : Start nginx 
+- stop    : Stop nginx
+- status  : Status nginx
+- reload  : reload configure nginx 
+- restart : Restart nginx systemd 
+- check   : Check configure nginx 
+-add-domains : Add domains 
+- pass  
+=======================================
+EOF
+}
